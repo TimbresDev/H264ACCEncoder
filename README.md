@@ -6,7 +6,7 @@ Pure Java H264.ACC Encoder to create frame-by-frame animation with given WAV fil
 ### Story 
 As a developer, I want to be able to use a pure Java encoder to create a movie frame-by-frame so I can generate video clips with sound for social media.
 
-Given a WAV stream (e.g. reading from a remote file resource) and my Java code to create AWT images I want the encoder to create an input stream that I can broadcast or store as a file and that will represent a MP4 movie with H264 video and ACC audio encoding
+Given a WAV stream (e.g. reading from a remote file resource) and my Java code to create AWT images I want the encoder to create an input stream that I can broadcast or read and copy to a file and that will represent a MP4 movie with H264 video and ACC audio encoding.
 
 ### More Detail
 When the H264ACCEncoder is implemented, then it should be possible to do the following:
