@@ -10,6 +10,7 @@ Given a WAV stream (e.g. reading from a remote file resource) and my Java code t
 
 ### More Detail
 When the H264ACCEncoder is implemented, then it should be possible to do the following:
+
 1. Create a new instance of the H264ACCEncoder via default constructor
 1. Specify an existing WAV input stream. The length of the WAV file defines the length of the output movie
 1. Specify a movie resolution and framerate
