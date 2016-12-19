@@ -55,7 +55,7 @@ If all of these criteria are met, then the solution is accepted:
 * Dependencies must follow the same design constraints as above (test-phase excluded)
 * No binary files must be part of the source (test data excluded)
 * No license restriction, the source code belongs to the poster, the freelancer waives all legal rights and agrees to open source this encoder
-* The freelancer may mark the source with his credits and the source may inlude a ReadMe that must be shipped with the encoder.
+* The freelancer may mark the source with her/his credits that will not be removed.
 
 ## Out of Scope
 * Other WAV formats
