@@ -1,5 +1,5 @@
 # H264ACCEncoder
-Pure Java H264.ACC Encoder to create frame-by-frame animation for WAV file
+Pure Java H264.ACC Encoder to create frame-by-frame animation with given WAV file audio
 
 ## Requirements
 
