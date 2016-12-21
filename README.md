@@ -1,5 +1,5 @@
-# H264ACCEncoder
-Pure Java H264.ACC Encoder to create frame-by-frame animation with given WAV file audio
+# H264AACEncoder
+Pure Java H264.AAC Encoder to create frame-by-frame animation with given WAV file audio
 
 ## Requirements
 
@@ -7,9 +7,9 @@ Pure Java H264.ACC Encoder to create frame-by-frame animation with given WAV fil
 As a developer, I want to be able to use a pure Java encoder to create a movie frame-by-frame so I can generate video clips with sound for social media.
 
 ### More Detail
-When the H264ACCEncoder is implemented, then it should be possible to do the following:
+When the H264AACEncoder is implemented, then it should be possible to do the following:
 
-1. Create a new instance of the H264ACCEncoder via default constructor
+1. Create a new instance of the H264AACEncoder via default constructor
 1. Specify an existing WAV input stream. The length of the WAV file defines the length of the output movie
 1. Specify a movie resolution and framerate
 1. Specify a callback FrameGenerator object that will be repeatedly called to generate the movie content frame-by-frame 
@@ -25,9 +25,8 @@ When the H264ACCEncoder is implemented, then it should be possible to do the fol
 * It can be assumed that there is sufficient memory available to the JVM to buffer the complete content of the WAV input stream in memory
 * It can be assumed that there is sufficient memory available to the JVM to buffer the complete content of the MP4 input stream in memory
 
-
 ## Acceptance Criteria
-Given a WAV file input stream and my Java code to create AWT images I want the encoder to return an input stream that I can read and copy directly to a file. The file will represent a MP4 movie with H264 video and ACC audio encoding. I will be able to upload the movie to Twitter and YouTube and it will play successfully on both platforms.
+Given a WAV file input stream and my Java code to create AWT images I want the encoder to return an input stream that I can read and copy directly to a file. The file will represent a MP4 movie with H264 video and AAC audio encoding. I will be able to upload the movie to Twitter and YouTube and it will play successfully on both platforms.
 
 If all of these criteria are met, then the solution is accepted:
 
@@ -46,6 +45,7 @@ If all of these criteria are met, then the solution is accepted:
 * Pure Java (no JNI, no Runtime.exec, no binaries of any sort)
 * No singletons, no static methods
 * No dependency on environment variables or on operating system
+* Must support JRE8
 * No usage of file system.
 
 ### Source
@@ -54,13 +54,17 @@ If all of these criteria are met, then the solution is accepted:
 * Dependencies to public libraries are ok but must be defined in pom.xml and must be available via public repositories
 * Dependencies must follow the same design constraints as above (test-phase excluded)
 * No binary files must be part of the source (test data excluded)
-* No license restriction, the source code belongs to the poster, the freelancer waives all legal rights and agrees to open source this encoder
+* No license restriction, the freelancer agrees to open source this encoder under MIT license and gives the sponsor the right for full commercial use
 * The freelancer may mark the source with her/his credits that will not be removed.
+
+### Performance
+* Encoding a 2sec movie should not take longer than 5 seconds (not counting the duration of the callbacks)
 
 ## Out of Scope
 * Other WAV formats
 * Other video output formats
 * Maven deployment
+
 
 
 
